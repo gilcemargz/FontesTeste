@@ -10,6 +10,8 @@ namespace Devmedia_curso1
     {
         static void Main(string[] args)
         {
+            Console.Write("olá mundo");
+            Console.ReadKey();
         }
     }
 }
