@@ -10,8 +10,35 @@ namespace Devmedia_curso1
     class Program
     {
 
+        public struct livros
+        {
+            public int codigo;
+            public string autor;
+            public string nome;
+        }
+
         static void Main(string[] args)
         {
+
+            #region livros
+
+            livros l1;
+            l1.autor = "Gil";
+            l1.codigo = 1;
+            l1.nome = "Star wars";
+
+            livros l2;
+            l2.autor = "Pedro";
+            l2.nome = "Galaxia";
+            l2.codigo = 2;
+             
+
+
+            #endregion
+
+
+
+
 
             byte b1 = 222;
             int i1 = 199;
@@ -57,18 +84,64 @@ namespace Devmedia_curso1
             arl.Add(2);
 
 
-            Console.WriteLine(arl[1]);     
+            Console.WriteLine(arl[1]);
 
 
 
 
+            #region if
+
+            int ax = (b1 < 10) ? 2 : 1;
+
+            Console.WriteLine("vairavel b1 =" + b1);
+            Console.WriteLine("vairavel ax =" +ax);
 
 
+
+            #endregion
 
 
 
             Console.ReadKey();
 
+            #region switch
+
+            switch (ax)
+            {
+                case 1:
+                    Console.WriteLine("oi");
+                
+                break;
+
+                default:
+                    Console.WriteLine("q");
+                    break;
+            }
+
+
+            #endregion
+
+
+
+            #region listas
+
+
+
+            List<string> lista = new List<string>();
+
+            lista.Add("gilcemar");
+            lista.Add("teste");
+
+            for (int i = 0; i < lista.Count; i++)
+            {
+                Console.WriteLine(lista[i]);
+            }
+
+
+            #endregion
+
+
+            Console.ReadKey();
         }
     }
 }
