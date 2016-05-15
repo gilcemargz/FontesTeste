@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using ClassePadrao;
+
+
 
 namespace Devmedia_curso1
 {
     class Program
     {
+
 
         public struct livros
         {
@@ -19,6 +23,13 @@ namespace Devmedia_curso1
 
         static void Main(string[] args)
         {
+
+
+            Livro oioi = new Livro();
+
+            oioi.Autor = "Gilcemar";
+
+
 
             #region livros
 
