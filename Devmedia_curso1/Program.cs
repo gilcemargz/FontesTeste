@@ -31,14 +31,15 @@ namespace Devmedia_curso1
             l2.autor = "Pedro";
             l2.nome = "Galaxia";
             l2.codigo = 2;
-             
+
 
 
             #endregion
 
 
+            #region teste
 
-
+  
 
             byte b1 = 222;
             int i1 = 199;
@@ -85,6 +86,7 @@ namespace Devmedia_curso1
 
 
             Console.WriteLine(arl[1]);
+            #endregion
 
 
 
@@ -139,6 +141,49 @@ namespace Devmedia_curso1
 
 
             #endregion
+
+
+            var list = new[]
+                            {
+                                new { Number = 10, Name = "Smith" },
+                                new { Number = 10, Name = "John" }
+                            }.ToList();
+
+            var tes = new { Number = 10, Name = "oi" };
+
+            list.Add(tes);
+
+
+
+            #region TesteAlunosClasse
+
+
+            Console.WriteLine("------INICIANDO TESTE CLASSE ALUNO-------");
+
+            Aluno a1 = new Aluno();
+
+            for (int i = 0; i < 10; i++)
+            {
+                Aluno a = new Aluno();
+
+            }
+
+            Aluno a3 = new Aluno("Gilcemar");
+
+           
+
+
+            a1.Idade = 20;
+
+
+
+
+            Console.WriteLine("---------FIM TESTES ALUNOS-----------");
+
+            #endregion
+
+
+
 
 
             Console.ReadKey();
