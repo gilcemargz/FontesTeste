@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using ClassePadrao;
-
-
+using System.Threading;
+using System.Globalization;
 
 namespace Devmedia_curso1
 {
@@ -23,6 +23,48 @@ namespace Devmedia_curso1
 
         static void Main(string[] args)
         {
+
+            DateTime t1 = new DateTime();
+            t1 = DateTime.Now;
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Gilcemar ");
+            sb.Append("Guizzo ");
+            sb.Append("Zanette");
+
+            Console.WriteLine(sb);
+
+            for (int i = 0; i < 2000000; i++)
+            {
+                StringBuilder sb1 = new StringBuilder();
+
+                sb1.Append("Teste");
+            }
+
+            
+
+
+            DateTime t2 = new DateTime() ;
+
+            t2 = DateTime.Now;
+
+            TimeSpan tr = t2- t1;
+
+            CultureInfo cultura1;
+
+            Console.WriteLine(tr);
+
+           
+            
+
+
+
+            Console.ReadKey();
+
+            return;
+
+
 
 
             Livro oioi = new Livro();
