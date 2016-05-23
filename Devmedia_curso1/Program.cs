@@ -55,7 +55,13 @@ namespace Devmedia_curso1
 
             Console.WriteLine(tr);
 
-           
+            CultureInfo pt = new CultureInfo("pt-BR");
+            CultureInfo en = new CultureInfo("en-US");
+
+            System.Threading.Thread.CurrentThread.CurrentCulture = en;
+            Thread.CurrentThread.CurrentUICulture = en;
+
+            Console.Write(Devmedia_curso1.Main.Descricao);
             
 
 
