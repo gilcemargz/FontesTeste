@@ -7,6 +7,7 @@ using System.Collections;
 using ClassePadrao;
 using System.Threading;
 using System.Globalization;
+using System.IO;
 
 namespace Devmedia_curso1
 {
@@ -23,6 +24,14 @@ namespace Devmedia_curso1
 
         static void Main(string[] args)
         {
+
+            StringBuilder testeIO = new StringBuilder();
+            testeIO.Append("The redfox says");
+            File.AppendAllText(@"d:\teste.txt", testeIO.ToString());
+
+
+
+
 
             DateTime t1 = new DateTime();
             t1 = DateTime.Now;
